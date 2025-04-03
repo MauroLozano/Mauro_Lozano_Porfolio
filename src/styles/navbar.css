@@ -1,0 +1,43 @@
+/* navBar */
+.nav_container{
+    display: visible;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    justify-content: center;;
+    gap: 15px;
+}
+.navBar_disabled{
+    display: visible;
+    width: 100%;
+    height: fit-content;
+    position: fixed;
+    top: -10%;
+    transition: all 0.2s ease-in-out;
+    z-index: 20;
+
+}
+.navBar_active{
+    display: visible;
+    width: 100%;
+    height: fit-content;
+    position: fixed;
+    top: 0;
+    transition: all 0.2s ease-in-out;
+    z-index: 20;
+}
+.nav_item{
+    margin: 0 10px;
+    color: #c3aa72;
+    font-size: 1.5rem;
+    text-shadow: #6b5c3f -4px 3px 3px;
+    text-decoration: none;
+}
+.nav_logo{
+    max-width: 30px;
+    max-height: 30px;
+    position: absolute;
+    left: 10px;
+}

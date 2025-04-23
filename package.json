@@ -1,0 +1,16 @@
+{
+  "name": "bundler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "rollup -c -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license":"ISC",
+  "devDependencies": {
+    "rollup": "^4.40.0"
+  }
+}

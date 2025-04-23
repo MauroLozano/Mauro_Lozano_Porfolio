@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mauro Lozano Portfolio</title>
-    <link rel="stylesheet" href="../src/styles/main.css" type="text/css">
-    <link rel="icon" href="../public/icon.ico" type="image/ico">
-    <script defer src="../src/scripts/responsive.js"></script>
+    <link rel="stylesheet" href="../public/styles/main.css" type="text/css">
+    <link rel="icon" href="../public/assets/icon.ico" type="image/ico">
+    <script defer src="../dist/bundle.js"></script>
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,118 +67,98 @@
             </div>
         </div>
         <div class="header_content">
-            <div class="profile_style"><img src="../public/images/profile.png" alt="" class="profile_photo"></div>
+            <div class="profile_style"><img src="../public/assets/images/profile.png" alt="" class="profile_photo"></div>
             <h1 class="header_title">MAURO LOZANO</h1>
         </div>
     </header>
         <!-- NavBar -->
         <nav class="navBar_disabled" id="navBar">
             <ul class="nav_container">
-                <img src="../public/images/logo.png" alt="" class="nav_logo">
-                <li class="nav_item">Mauro</li>
-                <li class="nav_item">Proyectos</li>
-                <li class="nav_item">Estudios</li>
-                <li class="nav_item">Contacto</li>
+                <img src="../public/assets/images/logo.png" alt="" class="nav_logo">
+                <li class="nav_item"><a href="#header">Mauro</a></li>
+                <li class="nav_item"><a href="#proyects">Proyectos</a></li>
+                <li class="nav_item"><a href="#studies">Estudios</a></li>
+                <li class="nav_item"><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
     <!-- MAIN -->
     <main>
         <h2>¿QUIÉN SOY?</h2>
         <p>Estudiante recién egresado de la secundaria, donde pude desarrollar mis habilidades sociales y organización a
-            través de diversos proyectos colaborativos.</p>
+            través de diversos proyectos colaborativos.
+        </p>
+        <!-- PROYECTS -->
+        <section class="proyects" id="proyects">
+            <h2>PROYECTOS</h2>
+            <article class="proyect">
+                <img src="../public/assets/images/image.png" alt="" class="proyect_img">
+                <div class="proyect_content">
+                    <h3>Proyecto3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorum eveniet quaerat non quas,
+                    accusamus sapiente iure commodi itaque odio in sequi cupiditate ipsa architecto rem porro molestiae!
+                    </p>
+                    <div class="proyect_buttons">
+                        <p class="proyect_preview">Vista Previa</p>
+                        <a href="" class="proyect_link"><img src="../public/assets/images/open_link.png" alt="Open link to proyect" class="proyect_link"></a>    
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- EXPERIENCE -->
+        <section class="experience" id="experience">
+            <h2>EXPERIENCIA</h2>
+            <ul>
+                <li class="list__item">
+                    <p> Edición de videos promocionales para redes sociales con herramientas como Adobe Premiere y CapCut. 
+                        Trabajé subtitulado, recorte y selección de clips, transiciones, musica, efectos de sonido, recursos gráficos y animaciones simples.
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <!-- STUDIES -->
+        <section class="studies" id="studies">
+            <h2>ESTUDIOS</h2>
+            <ul>
+                <li class="list__item">
+                    <h3>Lenguajes</h3>
+                    <p>
+                        Certificado de Ingles del Colegio de Lenguas Extranjeras(CLE).Facultad de Filosofía y Letras(UNC).
+                        <br>Certificado de Ingles nivel B2 de la Facultad de Filosofía y Letras (UNC).
+                    </p>
+                </li>
+                <li class="list__item">
+                    <h3>Secundario</h3>
+                    <p>Secundario Completo en Escuela de Comercio Martín Zapata (UNC). Bachillerato de orientacion en
+                        Infromática.</p>
+                </li>
+            </ul>
+        </section>
+        <!-- CONTACT -->
+        <section class="contact" id="contact">
+            <h2>Contacto</h2>
+            <h5>mauroloz2006@gmail.com</h5>
+            <form action="">
+                <fieldset>
+                    <legend>Infromacion Personal</legend>
+                    <label for="name">Ingrese su nombre.</label>
+                    <input type="text" name="name" id="name" placeholder="Nombre">
+                    <label for="lastname">Ingrese su apellido.</label>
+                    <input type="text" name="list__item" id="lastname" placeholder="Apellido">
+                    <label for="email">Ingrese el Email.</label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </fieldset>
+                <fieldset>
+                    <legend>Consulta</legend>
+                    <label for="subject">Asunto.</label>
+                    <input type="text" name="subject" id="subject" placeholder="Escriba la materia de que se trata">
+                    <label for="message">Escriba su mensaje.</label>
+                    <textarea name="messagge" id="message" placeholder="Escriba aquí su mensaje" rows="10" cols="50"
+                        maxlength="2000"></textarea>
+                </fieldset>
+                <input type="submit" name="submit" id="" class="form__submit">
+            </form>
+        </section>
     </main>
-
-    <!-- PROYECTS -->
-
-    <section class="proyects">
-        <h2>PROYECTOS</h2>
-        <article class="proyect">
-            <img src="../public/images/image.png" alt="" class="proyect_img">
-            <div class="proyect_content">
-                <h3>Proyecto3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorum eveniet quaerat non quas,
-                accusamus sapiente iure commodi itaque odio in sequi cupiditate ipsa architecto rem porro molestiae!
-                </p>
-                <div class="proyect_buttons">
-                    <button class="btn_proyect_content">Vista Previa</button>
-                    <a href=""><img src="./images/open_link.png" alt="" class="proyect_link"></a>
-                </div>
-            </div>
-        </article>
-        <article class="proyect">
-            <img src="../public/images/image.png" alt="" class="proyect_img">
-            <div class="proyect_content">
-                <h3>Proyecto3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorum eveniet quaerat non quas,
-                accusamus sapiente iure commodi itaque odio in sequi cupiditate ipsa architecto rem porro molestiae!
-                </p>
-                <div class="proyect_buttons">
-                    <button class="btn_proyect_content">Vista Previa</button>
-                    <a href=""><img src="./images/open_link.png" alt="" class="proyect_link"></a>
-                </div>
-            </div>
-        </article>
-        <article class="proyect">
-            <img src="../public/images/image.png" alt="" class="proyect_img">
-            <div class="proyect_content">
-                <h3>Proyecto3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorum eveniet quaerat non quas,
-                accusamus sapiente iure commodi itaque odio in sequi cupiditate ipsa architecto rem porro molestiae!
-                </p>
-                <div class="proyect_buttons">
-                    <button class="btn_proyect_content">Vista Previa</button>
-                    <a href=""><img src="./images/open_link.png" alt="" class="proyect_link"></a>
-                </div>
-            </div>
-        </article>
-    </section>
-
-    <!-- STUDIES -->
-
-    <section class="studies">
-        <h2>ESTUDIOS</h2>
-        <ul>
-            <li class="list__item">
-                <h3>Lenguajes</h3>
-                <p>
-                    Certificado de Ingles del Colegio de Lenguas Extranjeras(CLE).Facultad de Filosofía y Letras(UNC).
-                    <br>Certificado de Ingles nivel B2 de la Facultad de Filosofía y Letras (UNC).
-                </p>
-            </li>
-            <li class="list__item">
-                <h3>Secundario</h3>
-                <p>Secundario Completo en Escuela de Comercio Martín Zapata (UNC). Bachillerato de orientacion en
-                    Infromática.</p>
-            </li>
-        </ul>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="contact">
-        <h2>Contacto</h2>
-        <h5>mauroloz2006@gmail.com</h5>
-        <form action="">
-            <fieldset>
-                <legend>Infromacion Personal</legend>
-                <label for="name">Ingrese su nombre.</label>
-                <input type="text" name="name" id="name" placeholder="Nombre">
-                <label for="lastname">Ingrese su apellido.</label>
-                <input type="text" name="list__item" id="lastname" placeholder="Apellido">
-                <label for="email">Ingrese el Email.</label>
-                <input type="email" name="email" id="email" placeholder="Email">
-            </fieldset>
-            <fieldset>
-                <legend>Consulta</legend>
-                <label for="subject">Asunto.</label>
-                <input type="text" name="subject" id="subject" placeholder="Escriba la materia de que se trata">
-                <label for="message">Escriba su mensaje.</label>
-                <textarea name="messagge" id="message" placeholder="Escriba aquí su mensaje" rows="10" cols="50"
-                    maxlength="2000"></textarea>
-            </fieldset>
-            <input type="submit" name="submit" id="" class="form__submit">
-        </form>
-    </section>
-
     <!-- FOOTER -->
     <footer></footer>
 </body>

@@ -1,4 +1,4 @@
-export default "hola amogus";
+'use strict';
 
 // Title
 let viewportWidth = window.innerWidth;
@@ -9,26 +9,26 @@ if(viewportWidth <= 768){
 //NavBar
 const header = document.querySelector('#header');
 const navBar = document.querySelector('#navBar');
-const navBarClasses = navBar.classList;
+navBar.classList;
 
 if(viewportWidth<640){
     navBar.classList.add('navBar_disabled');
     navBar.classList.remove('navBar_active');
-    const navBarClasses = navBar.classList;
-}else{
+    navBar.classList;
+}else {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if(!entry.isIntersecting){
                 navBar.classList.remove('navBar_disabled');
                 navBar.classList.add('navBar_active');
-                const navBarClasses = navBar.classList;
+                navBar.classList;
             }
             if(entry.isIntersecting){
                 navBar.classList.add('navBar_disabled');
                 navBar.classList.remove('navBar_active');
-                const navBarClasses = navBar.classList;
+                navBar.classList;
             }
         });
-    })
+    });
     observer.observe(header);
 }

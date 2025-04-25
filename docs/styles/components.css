@@ -21,6 +21,17 @@ header{
     max-height: 300px;
     transform: rotate(-10deg);
 }
+.profile_style{
+    margin: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px 0px;
+    transform: rotate(10deg);
+    overflow: hidden;
+    height: 250px;
+    width: 250px;
+}
 /* navBar */
 .nav_container{
     display: visible;

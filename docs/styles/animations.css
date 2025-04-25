@@ -31,7 +31,6 @@
         top: 0;
     }
 }
-
 .header_animation_part_2{
     position: absolute;
     display: flex;
@@ -118,15 +117,6 @@
     border-radius: 100px 0 0 100px;
 }
 .profile_style{
-    margin: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(10deg);
-    border-radius: 50px 0px;
-    overflow: hidden;
-    height: 250px;
-    width: 250px;
     box-shadow: #c3aa72 0 0 35px 0.2px;
     animation: profile_anim 3s ease-in-out  infinite reverse both;
 }

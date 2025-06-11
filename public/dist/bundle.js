@@ -3,7 +3,7 @@
 // Title
 let viewportWidth = window.innerWidth;
 const h1Title = document.querySelector('.header_title');
-if(viewportWidth <= 768){
+if(viewportWidth <= 600){
     h1Title.innerHTML = 'MAURO<br>LOZANO';
 }
 //NavBar

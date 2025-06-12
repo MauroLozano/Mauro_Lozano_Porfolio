@@ -2,7 +2,6 @@ export default "responsive.js";
 // Title
 let viewportWidth = window.innerWidth;
 const h1Title = document.querySelector('.header__title');
-console.log(viewportWidth);
 if(viewportWidth <= 700){
     h1Title.innerHTML = 'MAURO<br>LOZANO';
 }

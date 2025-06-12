@@ -62,7 +62,7 @@ header{
     transition: all 0.2s ease-in-out;
     z-index: 20;
 }
-.nav__item{
+.nav-bar__item{
     margin: 0 10px;
     color: #c3aa72;
     font-size: 1.5rem;

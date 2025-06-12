@@ -15,18 +15,11 @@ main p{
     grid-area: 1 / 2 / 1 / 3;
     text-align: center;
 }
-section.proyects{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 .proyect{
     height: 200px;
     width: 700px;
     background-color: #577881;
     overflow: hidden;
-    margin-top: 1em;
     border-radius: 10px;
     transition:all 0.1s ease-in;
     display: grid;
@@ -39,7 +32,7 @@ section.proyects{
     transform: scale(1.005);
     box-shadow: 0 0 10px 1px #000;
 }
-.proyect__img--link{
+.proyect__img-link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,7 +49,7 @@ section.proyects{
     height: 100%;
     width: 100%;
 }
-.tech__img{
+.proyect__tech-img{
     height: inherit;
     margin: 0 10px;
 }
@@ -66,7 +59,7 @@ section.proyects{
     object-fit: cover;
     transition:transform 0.1s ease-in;
 }
-.proyect__img--link:active{
+.proyect__img-link:active{
     transform: scale(1.05);
     transition:transform 0.1s ease-in;
 }
@@ -76,7 +69,7 @@ section.proyects{
     align-items: center;
     margin: 0 10px;
 }
-.link__img{
+.project__link-img{
     max-width: 30px;
     max-height: 30px;
 }
@@ -84,6 +77,7 @@ section.proyects{
     color: #000;
     grid-area: 2 / 2 / 3 / 3;
     margin: 0 10px;
+    text-align: center;
 }
 .proyect__buttons{
     width: 100%;
@@ -92,7 +86,7 @@ section.proyects{
     align-items: center;
     grid-area: 4 / 2 / 5 / 3;
 }
-.info__button{
+.proyect__info-button{
     margin: 0 10px;
     padding: 5px 10px;
     width: 150px;
@@ -102,28 +96,30 @@ section.proyects{
     transition: background-color 0.3s ease-in-out;
     border: none;
 }
-.info__button:hover{
+.proyect__info-button:hover{
     background-color: #ffebc0;
     transition: background-color 0.3s ease-in-out;
 }
-/* EXPERIENCE */
-.experience{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 2vh auto;
+/* PROYECT INFO/PREVIEW */
+.proyect-info{
+    position: fixed;
+    z-index: 10;
+    width: 80vw;
+    height: 80vh;
+    background-color: #0b110d;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    border-radius: 10px;
+    display: none;
 }
-
-/* STUDIES */
-
-.studies{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
+.proyect-info--active{
+    transform: scale(1);
+    opacity: 1;
+    transition: transform opacity 0.3s ease-in-out;
 }
-
-/* PROYECT PREVIEW */
-
+.proyect-info--disabled{
+    transform: scale(2);
+    opacity: 0;
+    transition: transform opacity 0.3s ease-in-out;
+}

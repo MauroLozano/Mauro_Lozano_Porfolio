@@ -73,37 +73,42 @@
         <nav class="nav-bar--disabled" id="navBar">
             <ul class="nav__container">
                 <a href="https://maurolportfolio.netlify.app/" target="_blank"><img src="assets/images/logo.png" alt="" class="nav__logo"></a>
-                <li class="nav__item"><a href="#header">Mauro</a></li>
-                <li class="nav__item"><a href="#proyects">Proyectos</a></li>
-                <li class="nav__item"><a href="#studies">Estudios</a></li>
-                <li class="nav__item"><a href="#contact">Contacto</a></li>
+                <li class="nav-bar__item"><a href="#header">Mauro</a></li>
+                <li class="nav-bar__item"><a href="#proyects">Proyectos</a></li>
+                <li class="nav-bar__item"><a href="#studies">Estudios</a></li>
+                <li class="nav-bar__item"><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
     <!-- MAIN -->
     <main>
-        <h2 class="section__title">¿QUIÉN SOY?</h2>
-        <p>Estudiante recién egresado de la secundaria, donde pude desarrollar mis habilidades sociales y organización a
-            través de diversos proyectos colaborativos.
-        </p>
+        <!-- PRESENTATION -->
+         <section class="presentation">
+            <h2 class="section__title">¿QUIÉN SOY?</h2>
+            <p>Estudiante recién egresado de la secundaria, donde pude desarrollar mis habilidades sociales y organización através de diversos proyectos colaborativos.</p>
+         </section>
         <!-- PROYECTS -->
         <section class="proyects" id="proyects">
             <h2 class="section__title">PROYECTOS</h2>
             <article class="proyect">
-                <a href="https://alabarda.netlify.app/" target="_blank" class="proyect__img--link"><img src="assets/images/proyects/alabarda.webp" alt="" class="proyect__img" loading="lazy"></a>
+                <a href="https://alabarda.netlify.app/" target="_blank" class="proyect__img-link"><img src="assets/images/proyects/alabarda.webp" alt="" class="proyect__img" loading="lazy"></a>
                 <h3>Landing Page: Alabarda</h3>
                 <p class="proyect__text">Pagina de presentacion para una pagina web de E-Commerce sobre indumentaria formal.</p>
                 <div class="proyect__tech">
-                    <img src="./assets/images/technologies/html5logo.webp" alt="" class="tech__img" loading="lazy">
-                    <img src="./assets/images/technologies/csslogo.webp" alt="" class="tech__img" loading="lazy">
-                    <img src="./assets/images/technologies/jslogo.webp" alt="" class="tech__img" loading="lazy">
-                    <img src="./assets/images/technologies/webpacklogo.webp" alt="" class="tech__img" loading="lazy">
+                    <img src="./assets/images/technologies/html5logo.webp" alt="" class="proyect__tech-img" loading="lazy">
+                    <img src="./assets/images/technologies/csslogo.webp" alt="" class="proyect__tech-img" loading="lazy">
+                    <img src="./assets/images/technologies/jslogo.webp" alt="" class="proyect__tech-img" loading="lazy">
+                    <img src="./assets/images/technologies/webpacklogo.webp" alt="" class="proyect__tech-img" loading="lazy">
                 </div>
                 <div class="proyect__buttons">
-                    <button class="info__button">Mas Información</button>
-                    <a href="https://alabarda.netlify.app/" class="proyect__link" target="_blank" rel="noopener"><img src="assets/images/open_link.png" alt="Open link to proyect" class="link__img"></a>    
+                    <button class="proyect__info-button">Mas Información</button>
+                    <a href="https://alabarda.netlify.app/" class="proyect__link" target="_blank" rel="noopener"><img src="assets/images/open_link.png" alt="Open link to proyect" class="project__link-img"></a>    
                 </div>
-                <div class="proyect__info"></div>
             </article>
+            <div class="proyect-info">
+                <div class="proyect-info__image-slider">
+                </div>
+                <button class="project-info__close">Cerrar</button>
+            </div>
         </section>
         <!-- EXPERIENCE -->
         <section class="experience" id="experience">

@@ -2,31 +2,28 @@
 
 // Title
 let viewportWidth = window.innerWidth;
-const h1Title = document.querySelector('.header_title');
-if(viewportWidth <= 600){
+const h1Title = document.querySelector('.header__title');
+console.log(viewportWidth);
+if(viewportWidth <= 700){
     h1Title.innerHTML = 'MAURO<br>LOZANO';
 }
 //NavBar
-const header = document.querySelector('#header');
-const navBar = document.querySelector('#navBar');
-navBar.classList;
+const header = document.getElementById('header');
+const navBar = document.getElementById('navBar');
 
 if(viewportWidth<640){
-    navBar.classList.add('navBar_disabled');
-    navBar.classList.remove('navBar_active');
-    navBar.classList;
+    navBar.classList.add('nav-bar--disabled');
+    navBar.classList.remove('nav-bar--active');
 }else {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if(!entry.isIntersecting){
-                navBar.classList.remove('navBar_disabled');
-                navBar.classList.add('navBar_active');
-                navBar.classList;
+                navBar.classList.remove('nav-bar--disabled');
+                navBar.classList.add('nav-bar--active');
             }
             if(entry.isIntersecting){
-                navBar.classList.add('navBar_disabled');
-                navBar.classList.remove('navBar_active');
-                navBar.classList;
+                navBar.classList.add('nav-bar--disabled');
+                navBar.classList.remove('nav-bar--active');
             }
         });
     });

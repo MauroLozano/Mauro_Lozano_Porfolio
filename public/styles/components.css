@@ -5,23 +5,23 @@ header{
     box-shadow: 0 0 10px 2px #000;
     height: 350px;  
 }
-.header_content{
+.header__content{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
-.header_title{
+.header__title{
     color: #c3aa72;
     margin:5px;
     text-shadow: #6b5c3f -4px 3px 3px;
 }
-.profile_photo{
+.profile__photo{
     max-width: 300px;    
     max-height: 300px;
     transform: rotate(-10deg);
 }
-.profile_style{
+.profile__style{
     margin: 2em;
     display: flex;
     justify-content: center;
@@ -33,7 +33,7 @@ header{
     width: 250px;
 }
 /* navBar */
-.nav_container{
+.nav__container{
     display: visible;
     display: flex;
     background-color: rgba(0, 0, 0, 0.6);
@@ -43,7 +43,7 @@ header{
     justify-content: center;;
     gap: 15px;
 }
-.navBar_disabled{
+.nav-bar--disabled{
     display: visible;
     width: 100%;
     height: fit-content;
@@ -53,7 +53,7 @@ header{
     z-index: 20;
 
 }
-.navBar_active{
+.nav-bar--active{
     display: visible;
     width: 100%;
     height: fit-content;
@@ -62,14 +62,14 @@ header{
     transition: all 0.2s ease-in-out;
     z-index: 20;
 }
-.nav_item{
+.nav__item{
     margin: 0 10px;
     color: #c3aa72;
     font-size: 1.5rem;
     text-shadow: #6b5c3f -4px 3px 3px;
     text-decoration: none;
 }
-.nav_logo{
+.nav__logo{
     max-width: 30px;
     max-height: 30px;
     position: absolute;

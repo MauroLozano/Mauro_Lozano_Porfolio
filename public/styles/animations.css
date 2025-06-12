@@ -1,6 +1,6 @@
 /* HEADER */
 
-.header_animation_container{
+.header-animation__container{
     position:absolute;
     width: 100%;
     height: inherit;
@@ -8,22 +8,22 @@
     display: flex;
     justify-content: space-between;
 }
-.header_animation_left,.header_animation_right{
+.header-animation__left,.header-animation__right{
     width: fit-content;
     height: auto;
     display: flex;
     justify-content: center;
     margin:100px;
 }
-.header_animation_part_1{
+.header-animation__part-1{
     position: absolute;
     display: flex;
     flex-direction: column;
     gap: 13px;
     top: -100%;
-    animation: header_animation_movement_1 8s infinite backwards linear;
+    animation: header-animation_movement_1 8s infinite backwards linear;
 }
-@keyframes header_animation_movement_1{
+@keyframes header-animation_movement_1{
     from{
         top: -100%;
     }
@@ -31,15 +31,15 @@
         top: 0;
     }
 }
-.header_animation_part_2{
+.header-animation__part-2{
     position: absolute;
     display: flex;
     flex-direction: column;
     gap: 13px;
     top: -100%;
-    animation: header_animation_movement_2 8s infinite backwards linear;
+    animation: header-animation_movement_2 8s infinite backwards linear;
 }
-@keyframes header_animation_movement_2{
+@keyframes header-animation_movement_2{
     from{
         top: 0;
     }
@@ -48,7 +48,7 @@
     }
 }
 
-.header_animation_line{
+.header-animation__line{
     background-color: #c3aa72;
     width: 20px;
     height: 70px;
@@ -56,7 +56,7 @@
     position: relative;
     box-shadow: -2px 1px 5px 5px #463c29;
 }
-.header_animation_line::after{
+.header-animation__line::after{
     z-index: 5;
     content: '';
     display: block;
@@ -69,7 +69,7 @@
     left: 11px;
     border-radius: 4px;
 }
-.header_animation_line::before{
+.header-animation__line::before{
     z-index: 5;
     content: '';
     display: block;
@@ -82,7 +82,7 @@
     left: 0px;
     border-radius: 100px 0 0 100px;
 }
-.header_animation_dot{
+.header-animation__dot{
     background-color: #c3aa72;
     width: 20px;
     height: 20px;
@@ -90,7 +90,7 @@
     position: relative;
     box-shadow: -2px 1px 5px 5px #463c29;
 }
-.header_animation_dot::after{
+.header-animation__dot::after{
     z-index: 5;
     content: '';
     display: block;
@@ -103,7 +103,7 @@
     left: 11px;
     border-radius: 4px;
 }
-.header_animation_dot::before{
+.header-animation__dot::before{
     z-index: 5;
     content: '';
     display: block;
@@ -116,7 +116,7 @@
     left: 1px;
     border-radius: 100px 0 0 100px;
 }
-.profile_style{
+.profile__style{
     box-shadow: #c3aa72 0 0 35px 0.2px;
     animation: profile_anim 3s ease-in-out  infinite reverse both;
 }

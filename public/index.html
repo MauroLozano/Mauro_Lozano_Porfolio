@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mauro Lozano Portfolio</title>
     <link rel="stylesheet" href="dist/bundle.css" type="text/css">
-    <link rel="icon" href="assets/icon.ico" type="image/ico">
+    <link rel="icon" href="assets/images/icon.ico" type="image/ico">
     <script defer src="./dist/bundle.js"></script>
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,7 +73,7 @@
             <ul class="nav__container">
                 <a href="https://maurolportfolio.netlify.app/" target="_blank"><img src="assets/images/logo.png" alt="" class="nav__logo"></a>
                 <li class="nav-bar__item"><a href="#header">Mauro</a></li>
-                <li class="nav-bar__item"><a href="#proyects">Proyectos</a></li>
+                <li class="nav-bar__item"><a href="#projects">Proyectos</a></li>
                 <li class="nav-bar__item"><a href="#studies">Estudios</a></li>
                 <li class="nav-bar__item"><a href="#contact">Contacto</a></li>
             </ul>
@@ -83,31 +83,46 @@
         <!-- PRESENTATION -->
          <section class="presentation">
             <h2 class="section__title">¿QUIÉN SOY?</h2>
-            <p>Estudiante recién egresado de la secundaria, donde pude desarrollar mis habilidades sociales y organización através de diversos proyectos colaborativos.</p>
+            <p>Estudiante recién egresado de la secundaria, donde pude desarrollar mis habilidades sociales y organización através de diversos projectos colaborativos.</p>
          </section>
-        <!-- PROYECTS -->
-        <section class="proyects" id="proyects">
+        <!-- projects -->
+        <section class="projects" id="projects">
             <h2 class="section__title">PROYECTOS</h2>
-            <article class="proyect">
-                <a href="https://alabarda.netlify.app/" target="_blank" class="proyect__img-link"><img src="assets/images/proyects/alabarda.webp" alt="" class="proyect__img" loading="lazy"></a>
+            <article class="project">
+                <a href="https://alabarda.netlify.app/" target="_blank" class="project__img-link"><img src="assets/images/projects/alabarda.webp" alt="" class="project__img" loading="lazy"></a>
                 <h3>Landing Page: Alabarda</h3>
-                <p class="proyect__text">Pagina de presentacion para una pagina web de E-Commerce sobre indumentaria formal.</p>
-                <div class="proyect__tech">
-                    <img src="./assets/images/technologies/html5logo.webp" alt="" class="proyect__tech-img" loading="lazy">
-                    <img src="./assets/images/technologies/csslogo.webp" alt="" class="proyect__tech-img" loading="lazy">
-                    <img src="./assets/images/technologies/jslogo.webp" alt="" class="proyect__tech-img" loading="lazy">
-                    <img src="./assets/images/technologies/webpacklogo.webp" alt="" class="proyect__tech-img" loading="lazy">
+                <p class="project__text">Pagina de presentacion para una pagina web de E-Commerce sobre indumentaria formal.</p>
+                <div class="project__tech">
+                    <img src="./assets/images/technologies/html5logo.webp" alt="" class="project__tech-img" loading="lazy">
+                    <img src="./assets/images/technologies/csslogo.webp" alt="" class="project__tech-img" loading="lazy">
+                    <img src="./assets/images/technologies/jslogo.webp" alt="" class="project__tech-img" loading="lazy">
+                    <img src="./assets/images/technologies/webpacklogo.webp" alt="" class="project__tech-img" loading="lazy">
                 </div>
-                <div class="proyect__buttons">
-                    <button class="proyect__info-button">Mas Información</button>
-                    <a href="https://alabarda.netlify.app/" class="proyect__link" target="_blank" rel="noopener"><img src="assets/images/open_link.png" alt="Open link to proyect" class="project__link-img"></a>    
+                <div class="project__buttons">
+                    <button type="button" class="project__info-button--open" id="project-alabarda__button--open">Mas Información</button>
+                    <a href="https://alabarda.netlify.app/" class="project__link" target="_blank" rel="noopener">Abrir</a>    
                 </div>
             </article>
-            <div class="proyect-info">
-                <div class="proyect-info__image-slider">
+            <div class="project-info project-info--disabled" id="project-alabarda">
+                <h3 class="proyect-info__title" id="project-alabarda__title">Landing Page: Alabarda</h3>
+                <div class="project-info__img-slider">
+                    <img src="./assets/images/projects/alabarda.webp" class="project-info__img" alt="" loading="lazy">
                 </div>
-                <button class="project-info__close">Cerrar</button>
+                <div class="project-info__tech">
+                    <p class="project-info__tech-text">Tecnologías usadas:</p>
+                    <div class="project-info__tech-images">
+                        <img src="./assets/images/technologies/html5logo.webp" alt="" class="project-info__tech-img" loading="lazy">
+                        <img src="./assets/images/technologies/csslogo.webp" alt="" class="project-info__tech-img" loading="lazy">
+                        <img src="./assets/images/technologies/jslogo.webp" alt="" class="project-info__tech-img" loading="lazy">
+                        <img src="./assets/images/technologies/webpacklogo.webp" alt="" class="project-info__tech-img" loading="lazy">
+                    </div>
+                </div>
+                <button type="button" class="project__info-button--close" id="project-alabarda__button--close"><img src="./assets/images/icons/close-img.webp" alt="" class="project-info__close--img"></button>
+                <div class="project-info__content">
+                    <p class="project-info__content--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nihil explicabo maiores numquam, saepe animi earum dolores! Reiciendis ipsum sed dolore cum officiis quos officia, exercitationem aspernatur consequuntur delectus ipsam?</p>
+                </div>
             </div>
+            <div class="project-info__blur--disabled" id="project-info__blur"></div>
         </section>
         <!-- EXPERIENCE -->
         <section class="experience" id="experience">

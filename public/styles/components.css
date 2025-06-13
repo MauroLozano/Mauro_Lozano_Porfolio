@@ -60,7 +60,8 @@ header{
     position: fixed;
     top: 0;
     transition: all 0.2s ease-in-out;
-    z-index: 20;
+    z-index: 1;
+    backdrop-filter: blur(4px);
 }
 .nav-bar__item{
     margin: 0 10px;

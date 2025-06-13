@@ -5,13 +5,17 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "rollup -c -w",
-    "build": "rollup -c"
+    "build": "webpack --config webpack.config.mjs --mode production",
+    "watch": "webpack --config webpack.config.mjs --watch"
   },
   "keywords": [],
   "author": "",
-  "license":"ISC",
+  "license": "ISC",
   "devDependencies": {
-    "rollup": "^4.40.0"
+    "css-loader": "^7.1.2",
+    "mini-css-extract-plugin": "^2.9.2",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
   }
 }

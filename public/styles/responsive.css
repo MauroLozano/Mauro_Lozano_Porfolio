@@ -65,6 +65,10 @@
         height: 200px;
         width: 200px;
     }
+    /* NavBAr */
+    .nav-container{
+        gap: 20px;
+    }
     /* PROJECT INFO/PREVIEW */
     .proyect-info__title{
         font-size: 2rem;

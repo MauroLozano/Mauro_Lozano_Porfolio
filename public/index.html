@@ -70,12 +70,16 @@
     </header>
         <!-- NavBar -->
         <nav class="nav-bar--disabled" id="navBar">
-            <ul class="nav__container">
-                <a href="https://maurolportfolio.netlify.app/" target="_blank"><img src="assets/images/logo.png" alt="" class="nav__logo"></a>
-                <li class="nav-bar__item"><a href="#header">Mauro</a></li>
-                <li class="nav-bar__item"><a href="#projects">Proyectos</a></li>
-                <li class="nav-bar__item"><a href="#studies">Estudios</a></li>
-                <li class="nav-bar__item"><a href="#contact">Contacto</a></li>
+            <ul class="nav-container" id="navList">
+                <a href="https://maurolportfolio.netlify.app/" class="nav__logo--link" target="_blank"><img src="assets/images/icons/logo.png" alt="" class="nav__logo--img"></a>
+                <li class="nav-bar__item"><button type="button" id="homeBtn">Inicio</button></li>
+                <li class="nav-bar__item"><button type="button" id="projectsBtn">Proyectos</button></li>
+                <li class="nav-bar__item"><button type="button" id="studiesBtn">Estudios</a></li>
+                <li class="nav-bar__item"><button type="button" id="contactBtn">Contacto</button></li>
+                <li class="nav-bar__item" id="nav-bar__item--social">
+                    <a href="https://github.com/MauroLozano" target="_blank"><img src="assets/images/social/github-img.webp" alt="" class="nav__logo--img"></a>
+                    <a href="https://www.linkedin.com/in/mauro-lozano-meana-621347355/?trk=opento_sprofile_topcard" target="_blank"><img src="assets/images/social/ln-img.webp" alt="" class="nav__logo--img"></a>
+                </li>
             </ul>
         </nav>
     <!-- MAIN -->
@@ -83,7 +87,7 @@
         <!-- PRESENTATION -->
          <section class="presentation">
             <h2 class="section__title">¿QUIÉN SOY?</h2>
-            <p>Estudiante recién egresado de la secundaria, donde pude desarrollar mis habilidades sociales y organización através de diversos projectos colaborativos.</p>
+            <p>Estudiante de desarrollo de software y web.</p>
          </section>
         <!-- projects -->
         <section class="projects" id="projects">

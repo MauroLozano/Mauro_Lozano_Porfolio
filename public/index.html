@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mauro Lozano Portfolio</title>
+    <title>Mauro Lozano | Desarrollo Web y Software</title>
     <link rel="stylesheet" href="dist/bundle.css" type="text/css">
     <link rel="icon" href="assets/images/icon.ico" type="image/ico">
     <script defer src="./dist/bundle.js"></script>
@@ -64,21 +64,21 @@
             </div>
         </div>
         <div class="header__content">
-            <div class="profile__style"><img src="assets/images/profile.png" alt="" class="profile__photo"></div>
+            <div class="profile__style"><img src="assets/images/icons/logo.webp" alt="" class="profile__photo"></div>
             <h1 class="header__title">MAURO LOZANO</h1>
         </div>
     </header>
         <!-- NavBar -->
         <nav class="nav-bar--disabled" id="navBar">
             <ul class="nav-container" id="navList">
-                <a href="https://maurolportfolio.netlify.app/" class="nav__logo--link" target="_blank"><img src="assets/images/icons/logo.png" alt="" class="nav__logo--img"></a>
+                <a href="https://maurolportfolio.netlify.app/" class="nav__logo--link" target="_blank"><img src="assets/images/icons/logo.webp" alt="" class="nav__logo--img"></a>
                 <li class="nav-bar__item"><button type="button" id="homeBtn">Inicio</button></li>
                 <li class="nav-bar__item"><button type="button" id="projectsBtn">Proyectos</button></li>
                 <li class="nav-bar__item"><button type="button" id="studiesBtn">Estudios</a></li>
                 <li class="nav-bar__item"><button type="button" id="contactBtn">Contacto</button></li>
                 <li class="nav-bar__item" id="nav-bar__item--social">
-                    <a href="https://github.com/MauroLozano" target="_blank"><img src="assets/images/social/github-img.webp" alt="" class="nav__logo--img"></a>
-                    <a href="https://www.linkedin.com/in/mauro-lozano-meana-621347355/?trk=opento_sprofile_topcard" target="_blank"><img src="assets/images/social/ln-img.webp" alt="" class="nav__logo--img"></a>
+                    <a href="https://github.com/MauroLozano" target="_blank"><img src="assets/images/social/github-img(40x40).webp" alt="" class="nav__logo--img"></a>
+                    <a href="https://www.linkedin.com/in/mauro-lozano-meana-621347355/?trk=opento_sprofile_topcard" target="_blank"><img src="assets/images/social/ln-img(40x40).webp" alt="" class="nav__logo--img"></a>
                 </li>
             </ul>
         </nav>
@@ -93,14 +93,14 @@
         <section class="projects" id="projects">
             <h2 class="section__title">PROYECTOS</h2>
             <article class="project">
-                <a href="https://alabarda.netlify.app/" target="_blank" class="project__img-link"><img src="assets/images/projects/alabarda.webp" alt="" class="project__img" loading="lazy"></a>
+                <a href="https://alabarda.netlify.app/" target="_blank" class="project__img-link"><img src="assets/images/projects/alabarda(412x351).webp" alt="" class="project__img" loading="lazy"></a>
                 <h3>Landing Page: Alabarda</h3>
                 <p class="project__text">Pagina de presentacion para una pagina web de E-Commerce sobre indumentaria formal.</p>
                 <div class="project__tech">
-                    <img src="./assets/images/technologies/html5logo.webp" alt="" class="project__tech-img" loading="lazy">
-                    <img src="./assets/images/technologies/csslogo.webp" alt="" class="project__tech-img" loading="lazy">
-                    <img src="./assets/images/technologies/jslogo.webp" alt="" class="project__tech-img" loading="lazy">
-                    <img src="./assets/images/technologies/webpacklogo.webp" alt="" class="project__tech-img" loading="lazy">
+                    <img src="./assets/images/technologies/html5logo(50x50).webp" alt="" class="project__tech-img" loading="lazy">
+                    <img src="./assets/images/technologies/csslogo(50x50).webp" alt="" class="project__tech-img" loading="lazy">
+                    <img src="./assets/images/technologies/jslogo(50x50).webp" alt="" class="project__tech-img" loading="lazy">
+                    <img src="./assets/images/technologies/webpacklogo(50x50).webp" alt="" class="project__tech-img" loading="lazy">
                 </div>
                 <div class="project__buttons">
                     <button type="button" class="project__info-button--open" id="project-alabarda__button--open">Mas Información</button>
@@ -110,7 +110,7 @@
             <div class="project-info project-info--disabled" id="project-alabarda">
                 <h3 class="proyect-info__title" id="project-alabarda__title">Landing Page: Alabarda</h3>
                 <div class="project-info__img-slider">
-                    <img src="./assets/images/projects/alabarda.webp" class="project-info__img" alt="" loading="lazy">
+                    <img src="./assets/images/projects/alabarda.webp" class="project-info__img" alt="" fetchpriority=high>
                 </div>
                 <div class="project-info__tech">
                     <p class="project-info__tech-text">Tecnologías usadas:</p>
@@ -121,7 +121,7 @@
                         <img src="./assets/images/technologies/webpacklogo.webp" alt="" class="project-info__tech-img" loading="lazy">
                     </div>
                 </div>
-                <button type="button" class="project__info-button--close" id="project-alabarda__button--close"><img src="./assets/images/icons/close-img.webp" alt="" class="project-info__close--img"></button>
+                <button type="button" class="project__info-button--close" aria-label="Cerrar proyecto Alabarda" id="project-alabarda__button--close"><img src="./assets/images/icons/close-img.webp" alt="" class="project-info__close--img"></button>
                 <div class="project-info__content">
                     <p class="project-info__content--text">Este proyecto de landing page fue diseñado con una intencion de profundizar en Javascript para agregar funcionalidad, ademas de mejorar al maximo los indicadores de web de optimización y SEO.<br><br>Se incorporaron metaetiquetas, compresion y formato webp para imagenes. <br><br>Organizacion del codigo con metodología BEM para un diseño escalable.</p>
                 </div>
@@ -179,7 +179,7 @@
         <!-- CONTACT -->
         <section class="contact" id="contact">
             <h2>Contacto</h2>
-            <h5>mauroloz2006@gmail.com</h5>
+            <p>mauroloz2006@gmail.com</p>
             <form action="">
                 <fieldset>
                     <legend>Infromacion Personal</legend>

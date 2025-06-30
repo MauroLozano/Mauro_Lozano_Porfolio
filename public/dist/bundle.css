@@ -4,12 +4,15 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 2rem;
 }
-main p{
+main section > p{
     max-width: 700px;
 }
-/* projectS */
+/* PRESENTATION */
+.presentation p{
+    text-align: center;
+}
+/* PROJECTS */
 .project h3{
     width: 100%;
     grid-area: 1 / 2 / 1 / 3;
@@ -163,6 +166,7 @@ main p{
     grid-template-columns: 50% auto 100px;
     grid-template-rows: 100px 50% auto;
     filter: drop-shadow(#6b5c3f 0 0 5px);
+    overflow-y: hidden;
 }
 .project-info--active{
     transform: scale(1);
@@ -219,18 +223,25 @@ main p{
     height: 100%;
     object-fit: cover;
 }
+.project-info__content--text{
+    letter-spacing: 1px;
+    line-height: 2rem;
+    width: 100%;
+}
 .project-info__tech{
     grid-area: 3 / 1 / 4 / 2;
+    height: 100%;
+    max-height: 100%;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
     gap: 20px;
+    padding: 10% 0 10% 0;
 }
 .project-info__tech-text{
     place-self: center;
     font-size: 2rem;
-    margin-top: 10px;
 }
 .project-info__tech-images{
     width: 100%;
@@ -243,14 +254,87 @@ main p{
 .project-info__tech-img{
     max-width: 100px;
     min-width: 30px;
-    width: 100%;
     flex-shrink: 1;
     filter: drop-shadow(#6b5c3f 0 0 10px);
-    margin: 10px;
 }
 .project-info__content{
     grid-area: 2 / 2 / 4 / 4;
     margin: 20px;
+}
+/* EXPERIENCE */
+.list__item{
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 50px au o;
+    place-items: center;
+    margin: 1rem 0;
+}
+.item__header{
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 50px auto;
+    place-items: center;
+    width: 100%;
+}
+.item__dot-active{ 
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #c3aa72;
+    position: relative;
+    transition: all 0.2s ease-out;
+}
+.item__dot-disabled{ 
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    background-color: #c3aa72;
+    position: relative;
+    transition: all 0.2s ease-out;
+}
+.item__dot-container{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #0b110d;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item__title{
+    width: 100%;
+    grid-area: 0 / 0 / 1 / 1;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: left;
+    color: #98bfc8;
+}
+.item__content{
+    color: #98bfc8;
+    text-wrap: pretty;
+    padding: 0 0 0 50px;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+.item__content > *{
+    min-height: 0;
+}
+.item__content--active {
+    opacity: 1;
+    grid-template-rows: 1fr;
+    margin-top: 20px;
+}
+.item__content--disabled {
+    opacity: 0;
+    grid-template-rows: 0fr;
+    margin-top: 0;
+}
+/* STUDIES */
+.studies h3{
+    color:#98bfc8;
 }
 .contact{
     display: flex;
@@ -480,7 +564,7 @@ h1{
 }
 h2{
     font-size: 2rem;
-    color: #98bfc8;
+    color: #acedff;
 }
 h3{
     font-size: 1.5rem;
@@ -499,7 +583,8 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1rem;   
+    margin: 1rem;
+    width: 700px;
 }
 /* HEADER */
 header{
@@ -668,6 +753,8 @@ footer{
         grid-area: 3 / 1 / 4 / 3;
         height: 100%;
         justify-content: space-evenly;
+        align-items: center;
+        padding: 0;
     }
     .project-info__tech-img{
         max-width: 80px;
@@ -677,7 +764,11 @@ footer{
         grid-area: 4 / 1 / 5 / 3;
     }
     .project-info__content--text{
+        width: 100%;
         font-size: 1.2rem ;
+    }
+    .project-info__content--text{
+        line-height: 1.2rem;
     }
 }
 @media (orientation: landscape) {
@@ -733,6 +824,10 @@ footer{
     .project{
         width: 600px;
     }
+    section{
+        width: 100%;
+        padding: 0 10px;
+    }
 }
 @media (max-width: 640px){
     /* HEADER */
@@ -740,14 +835,15 @@ footer{
         transform: rotate(10deg) scale(0.8);
     }
     /* MAIN */
-    main p{
-        max-width: 400px;
+    .project-info__content--text{
+        width: 100%;
     }
     /* PROJECT INFO/PREVIEW */
     .project-info{
         width: 100%;
         border-radius: 0;
     }
+
     /* PROJECTS */
     .project{
         height: 400px;
@@ -776,9 +872,6 @@ footer{
     /* PROJECT INFO/PREVIEW */
     .proyect-info__title{
         font-size: 1.5rem;
-    }
-    .project-info__tech-img{
-        margin: 5px;
     }
     /* CONTACT*/
     .contact{
@@ -822,11 +915,22 @@ footer{
         width: 200px;
     }
     /* PROJECT INFO/PREVIEW */
+    .project-info{
+        grid-template-rows: 10% 30% 12% auto;
+    }
     .proyect-info__title{
         font-size: 1.2rem;
     }
     .project-info__tech-text{
         font-size: 1.5rem;
+    }
+    .project-info__content--text{
+        width: 100%;
+        font-size: 1rem;
+    }
+    .project-info__tech-img{
+        max-width: 50px;
+        min-width: 10px;
     }
 }
 @media (max-width: 320px){

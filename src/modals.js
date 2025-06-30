@@ -1,5 +1,3 @@
-export default "animations.js";
-
 const alabardaInfoOpenBtn = document.querySelector('#project-alabarda__button--open');
 const alabardaInfoCloseBtn = document.querySelector('#project-alabarda__button--close');
 const projectInfoBlur = document.querySelector('#project-info__blur');

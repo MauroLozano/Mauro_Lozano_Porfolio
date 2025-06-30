@@ -13,7 +13,6 @@ export default function navBar(){
         return /Android|iPhone/i.test(navigator.userAgent); //Looks in the userAgent for the words Android and iPhone.
     }
     if(viewportWidth<960 || isMobile()){
-        console.log("true")
         navBar.classList.add('nav-bar--disabled');
         navBar.classList.remove('nav-bar--active');
     }else{

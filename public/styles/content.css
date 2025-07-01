@@ -17,12 +17,12 @@ main section > p{
     width: 100%;
     grid-area: 1 / 2 / 1 / 3;
     text-align: center;
-    color: #0b110d;
+    color: #e1c483;
 }
 .project{
     height: 200px;
     width: 700px;
-    background-color: #577881;
+    background-color: #5e503f;
     overflow: hidden;
     border-radius: 10px;
     transition:all 0.1s ease-in;
@@ -63,7 +63,7 @@ main section > p{
     object-fit: cover;
     transition:transform 0.1s ease-in;
 }
-.project__img-link:active{
+.project__img-link:enabled{
     transform: scale(1.05);
     transition:transform 0.1s ease-in;
 }
@@ -76,14 +76,14 @@ main section > p{
     width: 150px;
     font-family:Montserrat;
     border-radius: 5px;
-    background-color: #c3aa72;
+    background-color: #e1c483;
     transition: background-color 0.3s ease-in-out;
 }
 .project__link:hover{
     background-color: #ffebc0;
     transition: background-color 0.3s ease-in-out;
 }
-.project__link:active {
+.project__link:enabled {
   transform: scale(0.98);
 }
 .project__link-img{
@@ -91,7 +91,7 @@ main section > p{
     max-height: 30px;
 }
 .project__text{
-    color: #f3fdff;
+    color: #fff2e5;
     grid-area: 2 / 2 / 3 / 3;
     margin: 0 10px;
     text-align: center;
@@ -111,7 +111,7 @@ main section > p{
     width: 200px;
     font-family:Montserrat ;
     border-radius: 5px;
-    background-color: #c3aa72;
+    background-color: #e1c483;
     transition: background-color 0.3s ease-in-out;
     border: none;
 }
@@ -119,7 +119,7 @@ main section > p{
     background-color: #ffebc0;
     transition: background-color 0.3s ease-in-out;
 }
-.project__info-button--open:active {
+.project__info-button--open:enabled {
   transform: scale(0.98);
 }
 /* PROJECT INFO/PREVIEW */
@@ -136,7 +136,7 @@ main section > p{
     pointer-events: none;
     transition:backdrop-filter 0.3s ease-in-out ;
 }
-.project-info__blur--active{
+.project-info__blur--enabled{
     top: 0;
     left: 0;
     right: 0;
@@ -169,7 +169,7 @@ main section > p{
     filter: drop-shadow(#6b5c3f 0 0 5px);
     overflow-y: hidden;
 }
-.project-info--active{
+.project-info--enabled{
     transform: scale(1);
     opacity: 1;
     transition: transform 0.3s, opacity 0.3s;
@@ -187,7 +187,7 @@ main section > p{
     place-self: center;
     background: none;
     border-radius: 100%;
-    border: solid #c3aa72 1px;
+    border: solid #e1c483 1px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -199,8 +199,8 @@ main section > p{
     transform: scale(1.05);
     transition: border 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-.project__info-button--close:active{
-    border: solid #c3aa72 1px;
+.project__info-button--close:enabled{
+    border: solid #e1c483 1px;
     transform: scale(1);
     transition: border 0.1s ease-in-out, transform 0.1s ease-in-out;
 }
@@ -213,7 +213,7 @@ main section > p{
     text-align: center;
     font-size: 3rem;
     place-self: center;
-    color: #c3aa72;
+    color: #e1c483;
     text-shadow: #6b5c3f -4px 3px 3px;
 }
 .project-info__img-slider{
@@ -277,11 +277,11 @@ main section > p{
     place-items: center;
     width: 100%;
 }
-.item__dot-active{ 
+.item__dot-enabled{ 
     width: 10px;
     height: 10px;
     border-radius: 100%;
-    background-color: #c3aa72;
+    background-color: #e1c483;
     position: relative;
     transition: all 0.2s ease-out;
 }
@@ -289,7 +289,7 @@ main section > p{
     width: 0;
     height: 0;
     border-radius: 100%;
-    background-color: #c3aa72;
+    background-color: #e1c483;
     position: relative;
     transition: all 0.2s ease-out;
 }
@@ -297,7 +297,7 @@ main section > p{
     width: 20px;
     height: 20px;
     border-radius: 100%;
-    background-color: #0b110d;
+    background-color: #0a0908;
     position: relative;
     display: flex;
     justify-content: center;
@@ -305,14 +305,13 @@ main section > p{
 }
 .item__title{
     width: 100%;
-    grid-area: 0 / 0 / 1 / 1;
     font-size: 1.2rem;
     font-weight: 600;
     text-align: left;
-    color: #98bfc8;
+    color: #CFBCA5;
 }
 .item__content{
-    color: #98bfc8;
+    color: #fff2e5;
     text-wrap: pretty;
     padding: 0 0 0 50px;
     display: grid;
@@ -323,7 +322,7 @@ main section > p{
 .item__content > *{
     min-height: 0;
 }
-.item__content--active {
+.item__content--enabled {
     opacity: 1;
     grid-template-rows: 1fr;
     margin-top: 20px;
@@ -334,6 +333,3 @@ main section > p{
     margin-top: 0;
 }
 /* STUDIES */
-.studies h3{
-    color:#98bfc8;
-}

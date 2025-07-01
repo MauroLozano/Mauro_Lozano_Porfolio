@@ -76,18 +76,18 @@
                 <li class="nav-bar__item"><button type="button" id="studiesBtn">Estudios</a></li>
                 <li class="nav-bar__item"><button type="button" id="contactBtn">Contacto</button></li>
                 <li class="nav-bar__item" id="nav-bar__item--social">
-                    <a href="https://github.com/MauroLozano" target="_blank"><img src="assets/images/social/github-img(40x40).webp" alt="" class="nav__logo--img"></a>
-                    <a href="https://www.linkedin.com/in/mauro-lozano-meana-621347355/?trk=opento_sprofile_topcard" target="_blank"><img src="assets/images/social/ln-img(40x40).webp" alt="" class="nav__logo--img"></a>
+                    <a href="https://github.com/MauroLozano" class="tooltip" data-tooltip="GitHub" target="_blank"><img src="assets/images/social/github-img(40x40).webp" alt="" class="nav__logo--img"></a>
+                    <a href="https://www.linkedin.com/in/mauro-lozano-meana-621347355/?trk=opento_sprofile_topcard" class="tooltip" data-tooltip="Linkedin" target="_blank"><img src="assets/images/social/ln-img(40x40).webp" alt="" class="nav__logo--img"></a>
                 </li>
             </ul>
         </nav>
     <!-- MAIN -->
     <main>
         <!-- PRESENTATION -->
-         <section class="presentation">
-            <h2 class="section__title">¿QUIÉN SOY?</h2>
-            <p>Estudiante de desarrollo de software y web.</p>
-         </section>
+        <section class="presentation">
+        <h2 class="section__title">¿QUIÉN SOY?</h2>
+        <p>Estudiante de desarrollo de software y web.</p>
+        </section>
         <!-- PROJECTS -->
         <section class="projects" id="projects">
             <h2 class="section__title">PROYECTOS</h2>
@@ -97,9 +97,9 @@
                 <p class="project__text">Pagina de presentacion para una pagina web de E-Commerce sobre indumentaria formal.</p>
                 <div class="project__tech">
                     <img src="./assets/images/technologies/html5logo(50x50).webp" alt="" class="project__tech-img" loading="lazy">
-                    <img src="./assets/images/technologies/csslogo(50x50).webp" alt="" class="project__tech-img" loading="lazy">
-                    <img src="./assets/images/technologies/jslogo(50x50).webp" alt="" class="project__tech-img" loading="lazy">
-                    <img src="./assets/images/technologies/webpacklogo(50x50).webp" alt="" class="project__tech-img" loading="lazy">
+                    <img src="./assets/images/technologies/csslogo(50x50).webp" alt="" class="project__tech-img " loading="lazy">
+                    <img src="./assets/images/technologies/jslogo(50x50).webp" alt="" class="project__tech-img " loading="lazy">
+                    <img src="./assets/images/technologies/webpacklogo(50x50).webp" alt="" class="project__tech-img " loading="lazy">
                 </div>
                 <div class="project__buttons">
                     <button type="button" class="project__info-button--open" id="project-alabarda__button--open">Mas Información</button>
@@ -114,10 +114,10 @@
                 <div class="project-info__tech">
                     <p class="project-info__tech-text">Tecnologías usadas:</p>
                     <div class="project-info__tech-images">
-                        <img src="./assets/images/technologies/html5logo.webp" alt="" class="project-info__tech-img" loading="lazy">
-                        <img src="./assets/images/technologies/csslogo.webp" alt="" class="project-info__tech-img" loading="lazy">
-                        <img src="./assets/images/technologies/jslogo.webp" alt="" class="project-info__tech-img" loading="lazy">
-                        <img src="./assets/images/technologies/webpacklogo.webp" alt="" class="project-info__tech-img" loading="lazy">
+                        <div class="tooltip" data-tooltip="HTML5"><img src="./assets/images/technologies/html5logo.webp" alt="" data-tooltip="GitHub" class="project-info__tech-img" loading="lazy"></div>
+                        <div class="tooltip" data-tooltip="CSS"><img src="./assets/images/technologies/csslogo.webp" alt="" class="project-info__tech-img" loading="lazy"></div>
+                        <div class="tooltip" data-tooltip="JavaScript"><img src="./assets/images/technologies/jslogo.webp" alt="" class="project-info__tech-img" loading="lazy"></div>
+                        <div class="tooltip" data-tooltip="WebPack"><img src="./assets/images/technologies/webpacklogo.webp" alt="" class="project-info__tech-img" loading="lazy"></div>
                     </div>
                 </div>
                 <button type="button" class="project__info-button--close" aria-label="Cerrar proyecto Alabarda" id="project-alabarda__button--close"><img src="./assets/images/icons/close-img.webp" alt="" class="project-info__close--img"></button>

@@ -14,17 +14,17 @@ export default function navBar(){
     }
     if(viewportWidth<960 || isMobile()){
         navBar.classList.add('nav-bar--disabled');
-        navBar.classList.remove('nav-bar--active');
+        navBar.classList.remove('nav-bar--enabled');
     }else{
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if(!entry.isIntersecting){
                     navBar.classList.remove('nav-bar--disabled');
-                    navBar.classList.add('nav-bar--active');
+                    navBar.classList.add('nav-bar--enabled');
                 }
                 if(entry.isIntersecting){
                     navBar.classList.add('nav-bar--disabled');
-                    navBar.classList.remove('nav-bar--active');
+                    navBar.classList.remove('nav-bar--enabled');
                 }
             });
         })

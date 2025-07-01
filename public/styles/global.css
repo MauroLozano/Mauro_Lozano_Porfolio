@@ -1,5 +1,6 @@
+/* COLORS: 0a0908 22333b eae0d5 CFBCA5 D0BC90 5e503f */
 body{
-    background-color:#2c4d56;
+    background-color:#22333b;
     font-family: Montserrat;
     font-size: 1rem;
 }
@@ -24,14 +25,14 @@ h1{
 }
 h2{
     font-size: 2rem;
-    color: #acedff;
+    color: #e1c483;
 }
 h3{
     font-size: 1.5rem;
 }
 p{
     font-weight: 600;
-    color: #bbebf6;
+    color: #fff2e5;
     text-wrap: pretty;
 }
 input,textarea{

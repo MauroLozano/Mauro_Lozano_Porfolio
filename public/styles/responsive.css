@@ -201,6 +201,24 @@
         max-width: 50px;
         min-width: 10px;
     }
+    /* FOOTER */
+    footer{
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        place-items: center;
+    }
+    .footer__p{
+        grid-area: 2 / 1 / 3 / 1;
+        text-align: center;
+    }
+    .footer__contact{
+        grid-area: 1 / 1 / 2 / 1;
+        margin-left: 0;
+    }
+    .footer__p{
+        font-size: 0.8rem;
+    }
+    
 }
 @media (max-width: 320px){
     /* Header */
